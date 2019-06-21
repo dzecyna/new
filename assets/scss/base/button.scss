@@ -1,0 +1,26 @@
+.button{
+  border-radius: 20px;
+  color: #fff;
+  background: url("./images/appl.png") #267df4 no-repeat center left 10px;
+  font-size: 16px;
+  font-family: $font_main;
+  width: 120px;
+  height: 40px;
+  padding-left: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+
+  &:hover{
+    background: url("./images/appl.png")  no-repeat center left 10px #74abf7;
+  }
+}
+.button-video{
+  width: 200px;
+  background: url("./images/play.png") transparent no-repeat center left 30px;
+  border: 2px solid #dfe1e3;
+  border-radius: 25px;
+  height: 50px;
+  font-size: 16px;
+  font-family: $font_main;
+  cursor: pointer;
+}

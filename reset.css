@@ -2,16 +2,16 @@
 Error: Undefined variable: "$fontWeightLight".
         on line 35 of reset.scss
 
-30: 	list-style: none;
+30:   list-style: none;
 31: }
 32: 
 33: input, button {
-34: 	border: none;
-35: 	font: $fontWeightLight $defaultSize 'Open Sans', sans-serif;
+34:   border: none;
+35:   font: $fontWeightLight $defaultSize 'Lato', sans-serif;
 36: }
 37: 
 38: :focus {
-39: 	outline: 0;
+39:   outline: 0;
 40: }
 
 Backtrace:
@@ -75,4 +75,4 @@ C:/Ruby25-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fontWeightLight\".\A         on line 35 of reset.scss\A \A 30: 	list-style: none;\A 31: }\A 32: \A 33: input, button {\A 34: 	border: none;\A 35: 	font: $fontWeightLight $defaultSize 'Open Sans', sans-serif;\A 36: }\A 37: \A 38: :focus {\A 39: 	outline: 0;\A 40: }"; }
+  content: "Error: Undefined variable: \"$fontWeightLight\".\A         on line 35 of reset.scss\A \A 30:   list-style: none;\A 31: }\A 32: \A 33: input, button {\A 34:   border: none;\A 35:   font: $fontWeightLight $defaultSize 'Lato', sans-serif;\A 36: }\A 37: \A 38: :focus {\A 39:   outline: 0;\A 40: }"; }

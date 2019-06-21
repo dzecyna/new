@@ -13,29 +13,34 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 article, aside, details, figcaption, figure, footer, header, menu, nav, section, video {
-	display: block;
+  display: block;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 input, button {
-	border: none;
-	font: $fontWeightLight $defaultSize 'Lato', sans-serif;
-}
-html, body {
-	font: $fontWeightLight $defaultSize 'Lato', sans-serif;
-	color: $mainColor;
+  border: none;
+  font: $fontWeightLight $defaultSize 'Lato', sans-serif;
 }
 
+:focus {
+  outline: 0;
+}
+
+html, body {
+  font: $fontWeightLight $defaultSizeMobile 'Lato', sans-serif;
+  line-height: 1.35;
+
+}
