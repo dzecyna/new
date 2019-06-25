@@ -44,6 +44,10 @@
   nav {
     display: flex;
 
+    @media screen and (min-width: 1200px){
+      display: none;
+    }
+
     li {
       list-style: none;
       margin-left: 20px;
@@ -58,15 +62,28 @@
         &:hover {
           color: #d8d8d9;
         }
+
+        @media screen and (max-width: 1200px){
+          display: none;
+        }
       }
     }
   }
+
+  .manu{
+     display: none;
+     cursor: pointer;
+
+     @media screen and (max-width: 1200px){
+       display: flex;
+     }
+   }
 }
 .block-headline{
   text-align: center;
   margin-bottom: 110px;
   h2{
-    font-family: 'Varela Round', sans-serif;
+    font-family: $secondary_font;
     font-size: 62px;
     color: $color_background;
     margin-bottom: 30px;
