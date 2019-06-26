@@ -1,0 +1,146 @@
+.button {
+  display: inline-block;
+  padding: 0 20px;
+  min-width: 190px;
+  font-size: 18px;
+  line-height: 50px;
+  border: 2px solid #E1B87F;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #E1B87F;
+  transition: 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  background: #FFF;
+  text-decoration: none; }
+
+.button:hover {
+  color: #FFF;
+  background: #E1B87F; }
+
+.two-block {
+  display: flex; }
+
+.two-block .wrap-items {
+  display: flex; }
+
+.two-block .block-info {
+  align-self: center;
+  padding: 30px 25px; }
+
+.block-info {
+  width: 75%; }
+  .block-info h2 {
+    font-size: 60px;
+    max-width: 500px;
+    color: #E1B87F; }
+  .block-info p {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.6; }
+
+.two-block .images {
+  display: flex;
+  flex-wrap: wrap; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, video {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+input, button {
+  border: none;
+  font: 300 30px "Open Sans", sans-serif; }
+
+:focus {
+  outline: 0; }
+
+html, body {
+  font: 300 20px "Open Sans", sans-serif;
+  line-height: 1.35; }
+  @media screen and (min-width: 651px) {
+    html, body {
+      font-size: 22px; } }
+  @media screen and (min-width: 1001px) {
+    html, body {
+      font-size: 30px; } }
+
+.header {
+  background-image: url("./images/woman-header.png"), url("./images/brush-header.png");
+  background-position: top center, top -130px right -115px;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 770px; }
+
+.top-header {
+  display: flex;
+  justify-content: space-between; }
+
+@media screen and (min-width: 1001px) {
+  .wrap-nav {
+    margin-right: 80px; } }
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .menu-nav li {
+    margin-left: 40px; }
+    .menu-nav li a {
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #2D2926;
+      font-size: 25px; }
+
+.header .header-block .schedule {
+  overflow: hidden;
+  font-weight: 400;
+  font-family: 'Segoe-ui', sans-serif;
+  font-size: 22px;
+  line-height: 40px;
+  margin-left: 25px;
+  float: right;
+  margin-right: 40px;
+  color: #FFF;
+  max-width: 330px; }
+
+.two-block .images {
+  display: flex;
+  flex-wrap: wrap; }
+  .two-block .images li {
+    flex-grow: 1;
+    width: 50%;
+    list-style: none; }
+
+.woman {
+  background: url("./images/beauty-body.png") no-repeat left -225px top; }
+
+/*# sourceMappingURL=style.css.map */

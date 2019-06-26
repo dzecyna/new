@@ -7,10 +7,12 @@
   @media screen and (max-width: 1100px) {
     height: 700px;
   }
-}
-.container{
-  max-width: 1170px;
-  margin:0 auto;
+  .phone{
+    text-align: center;
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
+  }
 }
 .top-header {
   margin-bottom: 100px;
@@ -19,6 +21,9 @@
 .logo {
   display: block;
   text-align: center;
+  @media screen and (max-width: 1150px) {
+    text-align: left;
+  }
 }
 .nav-menu{
   display: flex;
@@ -36,16 +41,17 @@
       display: block;
     }
   }
-  li {
+  li{
     list-style: none;
     margin-left: 20px;
 
-    a {
+    a{
       font-weight: $fontWeightRegular;
       color: $color_font;
       text-decoration: none;
       cursor: pointer;
       font-family: $font_main;
+      transition: $transitionHover;
 
       &:hover{
         color: #d8d8d9;
@@ -89,68 +95,65 @@
     }
   }
 }
-.phone{
-  text-align: center;
-  @media screen and (max-width: 1100px) {
-    display: none;
-  }
-}
 .main-nav{
   float: left;
-
-  li {
-    margin-left: 50px;
-
-    a {
-      font-size: $defaultSize;
-      text-decoration: none;
-    }
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .main-nav li {
+  @media screen and (max-width: 580px) {
     margin-left: 20px;
-
-    a {
-      font-size: 16px;
-    }
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .main-nav {
-    ul {
+  ul{
+    @media screen and (max-width: 1500px) {
       display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+    @media screen and (max-width: 1150px) {
+      display: flex;
+    }
+    @media screen and (max-width: 580px) {
+      display: block;
+    }
 
-      li {
+    li{
+      margin-left: 50px;
+      @media screen and (min-width: 1200px) {
         &:first-child {
           margin-left: 0;
         }
+      }
+      @media screen and (max-width: 1150px) {
+        :first-child{
+          margin-left: 0;
+        }
+      }
+      @media screen and (max-width: 580px) {
+        margin-left: 0px;
+      }
 
-        a {
-          font-weight: $fontWeightRegular;
-          color: $color_background;
+      @media screen and (max-width: 1500px) {
+        margin-left: 20px;
+      }
+
+      a{
+        font-size: $defaultSize;
+        text-decoration: none;
+        font-weight: $fontWeightRegular;
+        color: $color_background;
+        transition: $transitionHover;
+        &:hover {
+          color: #d8d8d9;
+        }
+        @media screen and (min-width: 1200px) {
           font-size: 20px;
+        }
 
-          &:after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background:  $color_background;
-            transition: $color_background;
-          }
-
-          &:hover:after {
-            width: 100%;
-          }
+        @media screen and (max-width: 1500px) {
+          font-size: 16px;
         }
       }
     }
   }
 }
-
 @media screen and (max-width: 1150px) {
   .mobile-menu {
     height: 100%;
@@ -169,7 +172,7 @@
     z-index: 1000;
     width: 100%;
     right: 0;
-    background-color: $color_background;
+    background-color: rgb(104, 104, 104);;
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
@@ -217,10 +220,9 @@
 
   .mobile-menu-button {
     display: inline-block;
-    padding: 7px 10px;
     background-color: transparent;
     cursor: pointer;
-    margin: 10px;
+    margin-right: 10px;
     position: relative;
     z-index: 10000;
     float: right;
@@ -237,68 +239,6 @@
     width 0.4s ease-in;
   }
 }
-
-.main-nav li a {
-  font-size: 22px;
-}
-
-@media screen and (max-width: 1500px) {
-  .main-nav li a {
-    font-size: 20px;
-    color: #26272d;
-
-    &:hover{
-      color: $color_main;
-    }
-  }
-}
-@media screen and (max-width: 1150px) {
-
-  .main-nav ul {
-    display: flex;
-  }
-  .main-nav ul li:first-child {
-    margin-left: 0;
-  }
-  .main-nav ul li a {
-    color: #2D2926;
-  }
-  .main-nav ul li a:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #2D2926;
-    transition: 0.3s;
-  }
-  .main-nav ul li a:hover:after {
-    width: 100%;
-  }
-}
-.hidden-input {
-  display: none;
-}
-@media screen and (max-width: 1500px) {
-
-  .main-nav ul {
-    display: flex;
-  }
-}
-@media screen and (max-width: 580px) {
-
-  .main-nav {
-    margin-left: 20px;
-    ul {
-      display: block;
-    }
-
-    li {
-      margin-left: 0px;
-    }
-  }
-}
-
-
 
 
 
