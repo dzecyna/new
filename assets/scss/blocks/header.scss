@@ -4,103 +4,301 @@
   padding-top: 10px;
   height: 1000px;
   background-size: cover;
+  @media screen and (max-width: 1100px) {
+    height: 700px;
+  }
 }
 .container{
   max-width: 1170px;
   margin:0 auto;
 }
 .top-header {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 100px;
   align-items: center;
-
-  nav{
-    display: flex;
-    align-items: center;
-
-    li {
-      list-style: none;
-      margin-left: 20px;
-
-      a {
-        font-weight: $fontWeightRegular;
-        color: $color_background;
-        text-decoration: none;
-        cursor: pointer;
-        font-family: $font_main;
-
-        &:hover{
-          color: #d8d8d9;
-        }
-      }
-    }
-  }
 }
-.block-menu {
+.logo {
+  display: block;
+  text-align: center;
+}
+.nav-menu{
   display: flex;
   align-items: center;
+  float: right;
 
-  nav {
+  @media screen and (max-width: 580px) {
+    display: block;
+    margin-right: 20px;
+  }
+  ul{
     display: flex;
 
-    @media screen and (min-width: 1200px){
-      display: none;
+    @media screen and (max-width: 580px) {
+      display: block;
     }
+  }
+  li {
+    list-style: none;
+    margin-left: 20px;
 
-    li {
-      list-style: none;
-      margin-left: 20px;
+    a {
+      font-weight: $fontWeightRegular;
+      color: $color_font;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: $font_main;
 
-      a {
-        font-weight: $fontWeightRegular;
-        color: $color_background;
-        text-decoration: none;
-        cursor: pointer;
-        font-family: $font_main;
-
-        &:hover {
-          color: #d8d8d9;
-        }
-
-        @media screen and (max-width: 1200px){
-          display: none;
-        }
+      &:hover{
+        color: #d8d8d9;
       }
     }
   }
-
-  .manu{
-     display: none;
-     cursor: pointer;
-
-     @media screen and (max-width: 1200px){
-       display: flex;
-     }
-   }
 }
 .block-headline{
   text-align: center;
-  margin-bottom: 110px;
+  margin-bottom: 125px;
   h2{
     font-family: $secondary_font;
     font-size: 62px;
     color: $color_background;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1100px) {
+      font-size: 42px;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 35px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 100px) {
+      font-size: 25px;
+    }
   }
+
   p{
     font-family: $font_main;
     font-size: $defaultSize;
     color: #8c8f94;
-    width: 73%;
+    max-width: 67%;
     margin: 0 auto;
     margin-bottom: 50px;
 
+    @media screen and (max-width: 700px) {
+      font-size: 16px;
+    }
   }
 }
 .phone{
   text-align: center;
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 }
+.main-nav{
+  float: left;
+
+  li {
+    margin-left: 50px;
+
+    a {
+      font-size: $defaultSize;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .main-nav li {
+    margin-left: 20px;
+
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    ul {
+      display: flex;
+
+      li {
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          font-weight: $fontWeightRegular;
+          color: $color_background;
+          font-size: 20px;
+
+          &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background:  $color_background;
+            transition: $color_background;
+          }
+
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mobile-menu {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .content-mobile-menu {
+    padding-top: 100px;
+  }
+
+  .wrapper-mobile-menu {
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    right: 0;
+    background-color: $color_background;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+  }
+  .hidden-input {
+    display: none;
+  }
+  .mobile-menu-input:checked ~ .wrapper-mobile-menu {
+    transform: translateX(0%);
+  }
+
+  .mobile-menu-input:checked ~ label .bar {
+    background-color: #fff;
+  }
+
+  .mobile-menu-input:checked ~ label .top {
+    position: relative;
+    top: 0.5px;
+
+    -webkit-transform: translateY(0px) rotateZ(45deg);
+    -moz-transform: translateY(0px) rotateZ(45deg);
+    -ms-transform: translateY(0px) rotateZ(45deg);
+    -o-transform: translateY(0px) rotateZ(45deg);
+    transform: translateY(0px) rotateZ(45deg);
+  }
+
+  .mobile-menu-input:checked ~ label .bottom {
+    -webkit-transform: translateY(-15px) rotateZ(-45deg);
+    -moz-transform: translateY(-15px) rotateZ(-45deg);
+    -ms-transform: translateY(-15px) rotateZ(-45deg);
+    -o-transform: translateY(-15px) rotateZ(-45deg);
+    transform: translateY(-15px) rotateZ(-45deg);
+  }
+
+  .mobile-menu-input:checked ~ label .middle {
+    width: 0;
+  }
+
+  .middle {
+    margin: 0 auto;
+  }
+
+  .mobile-menu-button {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    z-index: 10000;
+    float: right;
+  }
+
+  .bar {
+    display: block;
+    background-color: $color_background;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 5px auto;
+    transition: background-color 0.4s ease-in, transform 0.4s ease-in,
+    width 0.4s ease-in;
+  }
+}
+
+.main-nav li a {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1500px) {
+  .main-nav li a {
+    font-size: 20px;
+    color: #26272d;
+
+    &:hover{
+      color: $color_main;
+    }
+  }
+}
+@media screen and (max-width: 1150px) {
+
+  .main-nav ul {
+    display: flex;
+  }
+  .main-nav ul li:first-child {
+    margin-left: 0;
+  }
+  .main-nav ul li a {
+    color: #2D2926;
+  }
+  .main-nav ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2D2926;
+    transition: 0.3s;
+  }
+  .main-nav ul li a:hover:after {
+    width: 100%;
+  }
+}
+.hidden-input {
+  display: none;
+}
+@media screen and (max-width: 1500px) {
+
+  .main-nav ul {
+    display: flex;
+  }
+}
+@media screen and (max-width: 580px) {
+
+  .main-nav {
+    margin-left: 20px;
+    ul {
+      display: block;
+    }
+
+    li {
+      margin-left: 0px;
+    }
+  }
+}
+
+
 
 
 

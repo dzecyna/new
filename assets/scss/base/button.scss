@@ -23,8 +23,13 @@
   font-size: 16px;
   font-family: $font_main;
   cursor: pointer;
+  @media screen and (max-width: 520px) {
+    width: 150px;
+    background: url(./images/play.png) no-repeat center left 15px;
+  }
 
   &:hover{
-    background: url("./images/play.png") transparent no-repeat center left 30px #fff;
+    background: url("./images/play.png") no-repeat center left 30px #dfe1e3;
   }
+
 }
