@@ -1,0 +1,202 @@
+.features{
+  display: flex;
+  margin-bottom: 100px;
+  border-bottom: 2px solid #f4f4f4;
+}
+.block-features{
+
+  h3{
+    font-family: $font_main;
+    font-weight: $fontWeightRegular;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  p{
+    margin-bottom: 20px;
+    max-width: 85%;
+
+    @include block-111;
+
+    &:last-child{
+      margin-bottom: 80px;
+    }
+  }
+}
+.icon{
+  margin-bottom: 40px;
+}
+.feature{
+  margin-bottom: 100px;
+  background: url(./images/iphone.png) no-repeat;
+  height: 800px;
+
+  .block-feature{
+    padding-top: 100px;
+    float: right;
+
+    h3{
+      @include headline;
+
+      margin-bottom: 60px;
+    }
+
+    p{
+      @include block-111;
+
+      margin-bottom: 20px;
+      width: 430px;
+
+
+      &:last-child{
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+.map-feature{
+  background: url("./images/map.png") no-repeat right;
+  height: 510px;
+  padding-bottom: 100px;
+
+  .block-map-feature{
+    h2{
+      @include headline;
+
+      margin-bottom: 60px;
+    }
+
+    p {
+      @include block-111;
+
+      margin-bottom: 20px;
+      max-width: 41%;
+
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+    h3{
+      font-family: $font_main;
+      font-size: 12px;
+      font-weight: $fontWeightBold;
+      margin-bottom: 30px;
+    }
+    .partner{
+      img{
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.interface{
+  background: #f5f5f8;
+  height: 1600px;
+  padding-top: 140px;
+
+  h2{
+    @include headline;
+
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  p{
+    @include block-111;
+
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .screen{
+    margin-bottom: 200px;
+
+    img{
+      margin-right: 98px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .program{
+    text-align: center;
+
+    p{
+      @include block-111;
+
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+.perfect-plan{
+  background: #f5f5f8;
+  padding-top: 155px;
+
+  .block-plan-container{
+    display: flex;
+    justify-content: space-between;
+
+    .block-perfect-plan{
+      width: 30%;
+      padding-top: 50px;
+
+      h2{
+        @include headline;
+        margin-bottom: 60px;
+      }
+
+      h3{
+        font-family: $font_main;
+        font-weight: $fontWeightBold;
+        font-size: 12px;
+        color: $color_font;
+        margin-bottom: 20px;
+      }
+
+      p{
+        font-family: $font_main;
+        font-weight: $fontWeightRegular;
+        font-size: $defaultSize;
+        color: $color_text;
+        margin-bottom: 30px;
+      }
+
+      span{
+        color: $color_text;
+        font-family: $font_main;
+        font-weight: $fontWeightRegular;
+        font-size: 14px;
+
+        a{
+          color: #267df4;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+      .checkbox-container{
+        margin-bottom: 60px;
+      }
+    }
+    .plan-block{
+      display: flex;
+
+      .block-plan{
+        background: #ebebed;
+        height: 510px;
+        width: 330px;
+
+        h3{
+
+        }
+      }
+    }
+
+  }
+}
+
+

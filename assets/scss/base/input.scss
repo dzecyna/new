@@ -1,0 +1,13 @@
+.input-field{
+  border: 2px solid #dfe1e3;
+  border-radius: $radius;
+  width: 480px;
+  margin-bottom: 60px;
+
+  .form-input{
+    height: 47px;
+    padding-left: 20px;
+    color: #3a3d4b;
+    background: transparent;
+  }
+}
