@@ -3,6 +3,18 @@
   padding-top: 80px;
   text-align: center;
 
+  @media screen and (max-width: 1240px) {
+    width: 900px;
+  }
+  @media screen and (max-width: 980px) {
+    width: 650px;
+  }
+  @media screen and (max-width: 720px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 560px) {
+    width: 300px;
+  }
 }
   .slider{
     margin-bottom: 50px;
@@ -15,6 +27,9 @@
         margin-bottom: 60px;
         padding-top: 0px;
 
+        @media screen and (max-width: 1240px) {
+          width: 100px;
+        }
       }
 
       h3{
@@ -23,6 +38,13 @@
         font-size: 32px;
         margin-bottom: 20px;
         text-align: center;
+
+        @media screen and (max-width: 980px) {
+          font-size: 24px;
+        }
+        @media screen and (max-width: 560px) {
+          font-size: 20px;
+        }
       }
 
       p{
@@ -33,6 +55,14 @@
         text-align: center;
         margin: 0 auto;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 980px) {
+         font-size: 16px;
+        }
+        @media screen and (max-width: 720px) {
+          font-size: 14px;
+          width: 100%;
+        }
       }
 
       .text{

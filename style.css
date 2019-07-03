@@ -56,6 +56,10 @@ html, body {
   background-color: #267df4;
   border-radius: 100px;
   width: 200px; }
+  @media screen and (max-width: 1100px) {
+    .button {
+      width: 150px;
+      font-size: 15px; } }
   .button.button-app {
     background: url("./images/appl.png") #267df4 no-repeat center left 10px;
     width: 120px;
@@ -69,10 +73,9 @@ html, body {
     border: 2px solid #dfe1e3;
     height: 50px;
     color: #26272d; }
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: 1100px) {
       .button.button-video {
-        width: 150px;
-        background: url(./images/play.png) no-repeat center left 15px; } }
+        background: url("./images/play.png") #fff no-repeat center left 15px; } }
     .button.button-video:hover {
       background: url("./images/play.png") no-repeat center left 30px #dfe1e3; }
   .button.button-feature {
@@ -81,6 +84,9 @@ html, body {
     margin-right: 20px; }
     .button.button-feature:hover {
       background: url("./images/arrow.png") no-repeat center right 10px #74abf7; }
+    @media screen and (max-width: 1100px) {
+      .button.button-feature {
+        background: url("./images/arrow.png") #267df4 no-repeat center right 15px; } }
   .button.button-more {
     background: transparent;
     border: 2px solid #dfe1e3;
@@ -98,6 +104,11 @@ html, body {
     margin-right: 5px; }
     .button.button-green:hover {
       background: url("./images/arrow.png") no-repeat center right 10px #92dd7b; }
+    @media screen and (max-width: 450px) {
+      .button.button-green {
+        width: 120px;
+        background: url(./images/arrow.png) #6fc754 no-repeat center right 13px;
+        font-size: 13px; } }
   .button.button-black {
     background: url("./images/appl.png") #131315 no-repeat center left 25px;
     width: 210px;
@@ -163,11 +174,23 @@ html, body {
   border-radius: 100px;
   width: 480px;
   margin-bottom: 60px; }
+  @media screen and (max-width: 500px) {
+    .interface .input-field {
+      width: 400px; } }
+  @media screen and (max-width: 450px) {
+    .interface .input-field {
+      width: 300px; } }
   .interface .input-field .form-input {
     height: 47px;
     padding-left: 20px;
     color: #3a3d4b;
     background: transparent; }
+    @media screen and (max-width: 500px) {
+      .interface .input-field .form-input {
+        font-size: 15px; } }
+    @media screen and (max-width: 450px) {
+      .interface .input-field .form-input {
+        font-size: 13px; } }
 
 .subscribe .input-field {
   border: 2px solid #dfe1e3;
@@ -182,6 +205,18 @@ html, body {
 .customers {
   padding-top: 80px;
   text-align: center; }
+  @media screen and (max-width: 1240px) {
+    .customers {
+      width: 900px; } }
+  @media screen and (max-width: 980px) {
+    .customers {
+      width: 650px; } }
+  @media screen and (max-width: 720px) {
+    .customers {
+      width: 500px; } }
+  @media screen and (max-width: 560px) {
+    .customers {
+      width: 300px; } }
 
 .slider {
   margin-bottom: 50px; }
@@ -191,12 +226,21 @@ html, body {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
     margin-bottom: 60px;
     padding-top: 0px; }
+    @media screen and (max-width: 1240px) {
+      .slider .carousel-element .customers {
+        width: 100px; } }
   .slider .carousel-element h3 {
     font-family: Lato, sans-serif;
     font-weight: 300;
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center; }
+    @media screen and (max-width: 980px) {
+      .slider .carousel-element h3 {
+        font-size: 24px; } }
+    @media screen and (max-width: 560px) {
+      .slider .carousel-element h3 {
+        font-size: 20px; } }
   .slider .carousel-element p {
     font-family: 'Varela Round', sans-serif;
     font-weight: 400;
@@ -207,6 +251,13 @@ html, body {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px; }
+    @media screen and (max-width: 980px) {
+      .slider .carousel-element p {
+        font-size: 16px; } }
+    @media screen and (max-width: 720px) {
+      .slider .carousel-element p {
+        font-size: 14px;
+        width: 100%; } }
   .slider .carousel-element .text {
     font-size: 12px;
     color: #26272d;
@@ -418,12 +469,21 @@ html, body {
   display: flex;
   margin-bottom: 100px;
   border-bottom: 2px solid #f4f4f4; }
+  @media screen and (max-width: 1200px) {
+    .features {
+      margin-left: 20px; } }
+  @media screen and (max-width: 650px) {
+    .features {
+      display: block; } }
 
 .block-features h3 {
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 26px;
   margin-bottom: 40px; }
+  @media screen and (max-width: 1200px) {
+    .block-features h3 {
+      font-size: 23px; } }
 .block-features p {
   margin-bottom: 20px;
   max-width: 85%;
@@ -433,22 +493,36 @@ html, body {
   color: #8c8f94; }
   .block-features p:last-child {
     margin-bottom: 80px; }
+  @media screen and (max-width: 1200px) {
+    .block-features p {
+      font-size: 16px; } }
 
 .icon {
   margin-bottom: 40px; }
 
 .feature {
   margin-bottom: 100px;
-  background: url(./images/iphone.png) no-repeat;
+  background: url("./images/iphone.png") no-repeat;
   height: 800px; }
   .feature .block-feature {
     padding-top: 100px;
     float: right; }
+    @media screen and (max-width: 1000px) {
+      .feature .block-feature {
+        float: none;
+        text-align: center; } }
     .feature .block-feature h3 {
       font-family: 'Varela Round', sans-serif;
       font-size: 42px;
       font-weight: 400;
       margin-bottom: 60px; }
+      @media screen and (max-width: 1150px) {
+        .feature .block-feature h3 {
+          font-size: 38px;
+          margin-bottom: 40px; } }
+      @media screen and (max-width: 600px) {
+        .feature .block-feature h3 {
+          font-size: 32px; } }
     .feature .block-feature p {
       font-family: 'Varela Round', sans-serif;
       font-weight: 400;
@@ -458,11 +532,26 @@ html, body {
       width: 430px; }
       .feature .block-feature p:last-child {
         margin-bottom: 50px; }
+      @media screen and (max-width: 1150px) {
+        .feature .block-feature p {
+          font-size: 17px; } }
+      @media screen and (max-width: 1000px) {
+        .feature .block-feature p {
+          width: 100%; } }
+      @media screen and (max-width: 600px) {
+        .feature .block-feature p {
+          font-size: 14px; } }
+    @media screen and (max-width: 1000px) {
+      .feature .block-feature .block-button {
+        margin-top: 20px; } }
 
 .map-feature {
   background: url("./images/map.png") no-repeat right;
   height: 510px;
   padding-bottom: 100px; }
+  @media screen and (max-width: 1100px) {
+    .map-feature .block-map-feature {
+      text-align: center; } }
   .map-feature .block-map-feature h2 {
     font-family: 'Varela Round', sans-serif;
     font-size: 42px;
@@ -477,6 +566,10 @@ html, body {
     max-width: 41%; }
     .map-feature .block-map-feature p:last-child {
       margin-bottom: 50px; }
+    @media screen and (max-width: 1100px) {
+      .map-feature .block-map-feature p {
+        max-width: 100%;
+        font-size: 20px; } }
   .map-feature .block-map-feature h3 {
     font-family: Lato, sans-serif;
     font-size: 12px;
@@ -489,12 +582,21 @@ html, body {
   background: #f5f5f8;
   height: 1600px;
   padding-top: 140px; }
+  @media screen and (max-width: 1680px) {
+    .interface {
+      height: 700px; } }
   .interface h2 {
     font-family: 'Varela Round', sans-serif;
     font-size: 42px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 50px; }
+    @media screen and (max-width: 700px) {
+      .interface h2 {
+        font-size: 38px; } }
+    @media screen and (max-width: 500px) {
+      .interface h2 {
+        font-size: 32px; } }
   .interface p {
     font-family: 'Varela Round', sans-serif;
     font-weight: 400;
@@ -505,9 +607,48 @@ html, body {
     margin-bottom: 40px; }
   .interface .screen {
     margin-bottom: 200px; }
+    @media screen and (max-width: 1680px) {
+      .interface .screen {
+        display: none; } }
     .interface .screen img {
       margin-right: 98px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25); }
+      @media screen and (max-width: 1915px) {
+        .interface .screen img {
+          margin-right: 96px; } }
+      @media screen and (max-width: 1900px) {
+        .interface .screen img {
+          margin-right: 90px; } }
+      @media screen and (max-width: 1880px) {
+        .interface .screen img {
+          margin-right: 83px; } }
+      @media screen and (max-width: 1855px) {
+        .interface .screen img {
+          margin-right: 77px; } }
+      @media screen and (max-width: 1830px) {
+        .interface .screen img {
+          margin-right: 74px; } }
+      @media screen and (max-width: 1819px) {
+        .interface .screen img {
+          margin-right: 70px; } }
+      @media screen and (max-width: 1800px) {
+        .interface .screen img {
+          margin-right: 64px; } }
+      @media screen and (max-width: 1776px) {
+        .interface .screen img {
+          margin-right: 60px; } }
+      @media screen and (max-width: 1760px) {
+        .interface .screen img {
+          margin-right: 54px; } }
+      @media screen and (max-width: 1740px) {
+        .interface .screen img {
+          margin-right: 49px; } }
+      @media screen and (max-width: 1718px) {
+        .interface .screen img {
+          margin-right: 44px; } }
+      @media screen and (max-width: 1700px) {
+        .interface .screen img {
+          margin-right: 40px; } }
       .interface .screen img:last-child {
         margin-right: 0px; }
   .interface .program {
@@ -529,6 +670,9 @@ html, body {
   .perfect-plan .block-plan-container {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 1250px) {
+      .perfect-plan .block-plan-container {
+        justify-content: space-around; } }
     .perfect-plan .block-plan-container .block-perfect-plan {
       width: 30%;
       padding-top: 50px; }
@@ -537,6 +681,9 @@ html, body {
         font-size: 42px;
         font-weight: 400;
         margin-bottom: 60px; }
+        @media screen and (max-width: 1050px) {
+          .perfect-plan .block-plan-container .block-perfect-plan h2 {
+            font-size: 37px; } }
       .perfect-plan .block-plan-container .block-perfect-plan h3 {
         font-family: Lato, sans-serif;
         font-weight: 700;
@@ -569,11 +716,17 @@ html, body {
         text-align: center;
         padding-top: 50px;
         border-radius: 20px; }
+        @media screen and (max-width: 1050px) {
+          .perfect-plan .block-plan-container .plan-block .block-plan {
+            width: 300px; } }
         .perfect-plan .block-plan-container .plan-block .block-plan:hover {
           background: #fff;
           height: 500px;
           width: 350px;
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25); }
+          @media screen and (max-width: 1050px) {
+            .perfect-plan .block-plan-container .plan-block .block-plan:hover {
+              width: 320px; } }
         .perfect-plan .block-plan-container .plan-block .block-plan h3 {
           font-family: Lato, sans-serif;
           font-weight: 400;
@@ -602,8 +755,14 @@ html, body {
           margin-bottom: 25px; }
           .perfect-plan .block-plan-container .plan-block .block-plan p:last-child {
             margin-bottom: 50px; }
+          @media screen and (max-width: 1050px) {
+            .perfect-plan .block-plan-container .plan-block .block-plan p {
+              background: url("./images/check-mark.png") no-repeat 70px; } }
         .perfect-plan .block-plan-container .plan-block .block-plan .check-mark {
           background: url("./images/check-mark.png") no-repeat 40px; }
+          @media screen and (max-width: 1050px) {
+            .perfect-plan .block-plan-container .plan-block .block-plan .check-mark {
+              background: url("./images/check-mark.png") no-repeat 0px; } }
 
 .footer {
   text-align: center; }

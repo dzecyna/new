@@ -2,6 +2,14 @@
   display: flex;
   margin-bottom: 100px;
   border-bottom: 2px solid #f4f4f4;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: 650px) {
+    display: block;
+  }
 }
 .block-features{
 
@@ -10,6 +18,10 @@
     font-weight: $fontWeightRegular;
     font-size: 26px;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 23px;
+    }
   }
 
   p{
@@ -21,6 +33,10 @@
     &:last-child{
       margin-bottom: 80px;
     }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 16px;
+    }
   }
 }
 .icon{
@@ -28,17 +44,31 @@
 }
 .feature{
   margin-bottom: 100px;
-  background: url(./images/iphone.png) no-repeat;
+  background: url("./images/iphone.png") no-repeat;
   height: 800px;
 
   .block-feature{
     padding-top: 100px;
     float: right;
 
+    @media screen and (max-width: 1000px) {
+      float: none;
+      text-align: center;
+    }
+
     h3{
       @include headline;
 
       margin-bottom: 60px;
+
+      @media screen and (max-width: 1150px) {
+        font-size: 38px;
+        margin-bottom: 40px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 32px
+      }
     }
 
     p{
@@ -51,6 +81,24 @@
       &:last-child{
         margin-bottom: 50px;
       }
+
+      @media screen and (max-width: 1150px) {
+        font-size: 17px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 14px
+      }
+    }
+    .block-button{
+
+      @media screen and (max-width: 1000px) {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -60,6 +108,11 @@
   padding-bottom: 100px;
 
   .block-map-feature{
+
+    @media screen and (max-width: 1100px) {
+      text-align: center;
+    }
+
     h2{
       @include headline;
 
@@ -74,6 +127,11 @@
 
       &:last-child {
         margin-bottom: 50px;
+      }
+
+      @media screen and (max-width: 1100px) {
+        max-width: 100%;
+        font-size: 20px;
       }
     }
     h3{
@@ -94,11 +152,22 @@
   height: 1600px;
   padding-top: 140px;
 
+  @media screen and (max-width: 1680px) {
+    height: 700px;
+  }
+
   h2{
     @include headline;
 
     text-align: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 700px) {
+      font-size: 38px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 32px;
+    }
   }
   p{
     @include block-111;
@@ -111,9 +180,50 @@
   .screen{
     margin-bottom: 200px;
 
+    @media screen and (max-width: 1680px) {
+      display: none;
+    }
+
     img{
       margin-right: 98px;
       box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+
+      @media screen and (max-width: 1915px) {
+        margin-right: 96px;
+      }
+      @media screen and (max-width: 1900px) {
+        margin-right: 90px;
+      }
+      @media screen and (max-width: 1880px) {
+        margin-right: 83px;
+      }
+      @media screen and (max-width: 1855px) {
+        margin-right: 77px;
+      }
+      @media screen and (max-width: 1830px) {
+        margin-right: 74px;
+      }
+      @media screen and (max-width: 1819px) {
+        margin-right: 70px;
+      }
+      @media screen and (max-width: 1800px) {
+        margin-right: 64px;
+      }
+      @media screen and (max-width: 1776px) {
+        margin-right: 60px;
+      }
+      @media screen and (max-width: 1760px) {
+        margin-right: 54px;
+      }
+      @media screen and (max-width: 1740px) {
+        margin-right: 49px;
+      }
+      @media screen and (max-width: 1718px) {
+        margin-right: 44px;
+      }
+      @media screen and (max-width: 1700px) {
+        margin-right: 40px;
+      }
 
       &:last-child {
         margin-right: 0px;
@@ -143,6 +253,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 1250px) {
+      justify-content: space-around;
+    }
+
     .block-perfect-plan{
       width: 30%;
       padding-top: 50px;
@@ -150,6 +264,10 @@
       h2{
         @include headline;
         margin-bottom: 60px;
+
+        @media screen and (max-width: 1050px) {
+          font-size: 37px;
+        }
       }
 
       h3{
@@ -195,11 +313,19 @@
         padding-top: 50px;
         border-radius: 20px;
 
+        @media screen and (max-width: 1050px) {
+          width: 300px;
+        }
+
         &:hover{
           background: #fff;
           height: 500px;
           width: 350px;
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+          @media screen and (max-width: 1050px) {
+            width: 320px;
+          }
         }
 
         h3{
@@ -238,9 +364,17 @@
           &:last-child{
             margin-bottom: 50px;
           }
+
+          @media screen and (max-width: 1050px) {
+            background: url("./images/check-mark.png") no-repeat 70px;
+          }
         }
         .check-mark{
           background: url("./images/check-mark.png") no-repeat 40px;
+
+          @media screen and (max-width: 1050px) {
+            background: url("./images/check-mark.png") no-repeat 0px;
+          }
         }
       }
     }

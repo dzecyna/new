@@ -8,6 +8,11 @@
   border-radius: $radius;
   width: 200px;
 
+  @media screen and (max-width: 1100px) {
+    width: 150px;
+    font-size: 15px;
+  }
+
   &.button-app {
     background: url("./images/appl.png") #267df4 no-repeat center left 10px;
     width: 120px;
@@ -25,9 +30,9 @@
     border: 2px solid #dfe1e3;
     height: 50px;
     color: $color_font;
-    @media screen and (max-width: 520px) {
-      width: 150px;
-      background: url(./images/play.png) no-repeat center left 15px;
+
+    @media screen and (max-width: 1100px) {
+      background: url("./images/play.png") #fff no-repeat center left 15px
     }
 
     &:hover {
@@ -41,6 +46,10 @@
 
     &:hover {
       background: url("./images/arrow.png") no-repeat center right 10px #74abf7;
+    }
+
+    @media screen and (max-width: 1100px) {
+      background: url("./images/arrow.png") #267df4 no-repeat center right 15px
     }
   }
 
@@ -66,6 +75,11 @@
 
     &:hover {
       background: url("./images/arrow.png") no-repeat center right 10px #92dd7b;
+    }
+    @media screen and (max-width: 450px) {
+      width: 120px;
+      background: url(./images/arrow.png) #6fc754 no-repeat center right 13px;
+      font-size: 13px;
     }
   }
 
