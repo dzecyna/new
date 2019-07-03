@@ -623,36 +623,78 @@ html, body {
       margin-bottom: 90px; }
   .footer .footer-block {
     display: flex;
-    text-align: start; }
-    .footer .footer-block .footer-social-network a img {
-      margin-bottom: 20px; }
-    .footer .footer-block .footer-social-network p {
-      margin-bottom: 20px;
+    text-align: start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f4f4f4; }
+    .footer .footer-block .footer-social-network {
+      margin-bottom: 120px; }
+      .footer .footer-block .footer-social-network a img {
+        margin-bottom: 20px; }
+      .footer .footer-block .footer-social-network p {
+        margin-bottom: 20px;
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #8c8f94;
+        width: 250px; }
+      .footer .footer-block .footer-social-network .social {
+        margin-bottom: 50px; }
+        .footer .footer-block .footer-social-network .social a {
+          display: inline-block;
+          background: url("./images/social.png");
+          width: 30px;
+          height: 20px; }
+          .footer .footer-block .footer-social-network .social a:hover {
+            opacity: 0.5; }
+          .footer .footer-block .footer-social-network .social a.twitter {
+            background-position: 1px 0; }
+          .footer .footer-block .footer-social-network .social a.facebooke {
+            background-position: -35px 0; }
+          .footer .footer-block .footer-social-network .social a.google {
+            background-position: -75px 0; }
+          .footer .footer-block .footer-social-network .social a.t {
+            background-position: -115px 0; }
+          .footer .footer-block .footer-social-network .social a.p {
+            background-position: -160px 0; }
+          .footer .footer-block .footer-social-network .social a.in {
+            background-position: -195px 0; }
+  .footer .footer-menu {
+    display: flex; }
+    .footer .footer-menu .menu-block {
+      margin-left: 100px; }
+      .footer .footer-menu .menu-block h3 {
+        font-family: Lato, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        margin-bottom: 25px; }
+      .footer .footer-menu .menu-block p {
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c8f94;
+        margin-bottom: 20px;
+        cursor: pointer; }
+  .footer .copyrights {
+    text-align: start;
+    display: flex;
+    justify-content: space-between; }
+    .footer .copyrights p {
+      color: #8c8f94;
       font-family: Lato, sans-serif;
       font-weight: 400;
-      font-size: 14px;
-      color: #8c8f94;
-      width: 250px; }
-    .footer .footer-block .footer-social-network .social {
-      margin-bottom: 50px; }
-      .footer .footer-block .footer-social-network .social a {
-        display: inline-block;
-        background: url("./images/social.png");
-        width: 30px;
-        height: 20px; }
-        .footer .footer-block .footer-social-network .social a:hover {
-          opacity: 0.5; }
-        .footer .footer-block .footer-social-network .social a.twitter {
-          background-position: 1px 0; }
-        .footer .footer-block .footer-social-network .social a.facebooke {
-          background-position: -35px 0; }
-        .footer .footer-block .footer-social-network .social a.google {
-          background-position: -75px 0; }
-        .footer .footer-block .footer-social-network .social a.t {
-          background-position: -115px 0; }
-        .footer .footer-block .footer-social-network .social a.p {
-          background-position: -160px 0; }
-        .footer .footer-block .footer-social-network .social a.in {
-          background-position: -195px 0; }
+      font-size: 14px; }
+      .footer .copyrights p a {
+        color: #267df4;
+        cursor: pointer;
+        text-decoration: underline; }
+    .footer .copyrights .fotter-logo {
+      display: flex;
+      align-items: center; }
+      .footer .copyrights .fotter-logo h3 {
+        font-size: 9px;
+        font-family: Lato, sans-serif;
+        font-weight: 700;
+        margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

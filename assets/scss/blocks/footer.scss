@@ -25,8 +25,13 @@
   .footer-block{
     display: flex;
     text-align: start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f4f4f4;
 
     .footer-social-network{
+
+      margin-bottom: 120px;
 
       a {
         img {
@@ -78,6 +83,60 @@
             background-position: -195px 0;
           }
         }
+      }
+    }
+  }
+  .footer-menu{
+    display: flex;
+
+    .menu-block{
+
+      margin-left: 100px;
+
+      h3{
+        font-family: $font_main;
+        font-weight: $fontWeightBold;
+        font-size: 12px;
+        margin-bottom: 25px;
+      }
+
+      p{
+        font-family: $font_main;
+        font-weight: $fontWeightRegular;
+        font-size: $buttonSize;
+        color: $color_text;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .copyrights{
+
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+
+    p{
+      color: $color_text;
+      font-family: $font_main;
+      font-weight: $fontWeightRegular;
+      font-size: 14px;
+
+      a{
+        color: #267df4;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    .fotter-logo{
+      display: flex;
+      align-items: center;
+
+      h3{
+        font-size: 9px;
+        font-family: $font_main;
+        font-weight: $fontWeightBold;
+        margin-right: 10px;
       }
     }
   }
