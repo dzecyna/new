@@ -65,14 +65,18 @@ html, body {
     width: 120px;
     height: 40px;
     padding-left: 25px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    -webkit-animation: scale-up-hor-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s both;
+    animation: scale-up-hor-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s both; }
     .button.button-app:hover {
       background: url("./images/appl.png") no-repeat center left 10px #74abf7; }
   .button.button-video {
     background: url("./images/play.png") #fff no-repeat center left 30px;
     border: 2px solid #dfe1e3;
     height: 50px;
-    color: #26272d; }
+    color: #26272d;
+    -webkit-animation: scale-up-hor-center 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both;
+    animation: scale-up-hor-center 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both; }
     @media screen and (max-width: 1100px) {
       .button.button-video {
         background: url("./images/play.png") #fff no-repeat center left 15px; } }
@@ -272,8 +276,9 @@ html, body {
         width: 100px; } }
   .slider .carousel-element h3 {
     font-family: Lato, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 32px;
+    font-weight: 300;
     margin-bottom: 20px;
     text-align: center; }
     @media screen and (max-width: 980px) {
@@ -308,6 +313,62 @@ html, body {
     padding-bottom: 60px;
     margin: 0 auto; }
 
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-2100px);
+    transform: translateX(-2100px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@-webkit-keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4); }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+@keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4); }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); } }
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 .header {
   background: url("./images/new.png");
   background-repeat: no-repeat;
@@ -327,9 +388,14 @@ html, body {
     @media screen and (max-width: 1100px) {
       .header .phone {
         display: none; } }
+    .header .phone img {
+      -webkit-animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both;
+      animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both; }
   .header .top-header {
     margin-bottom: 100px;
-    align-items: center; }
+    align-items: center;
+    -webkit-animation: scale-up-ver-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) 900ms both;
+    animation: scale-up-ver-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both; }
     @media screen and (max-width: 1150px) {
       .header .top-header {
         margin-left: 20px;
@@ -372,7 +438,9 @@ html, body {
       font-family: "Varela Round", sans-serif;
       font-size: 62px;
       color: #000;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      -webkit-animation: slide-right 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1000ms both;
+      animation: slide-right 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1000ms both; }
       @media screen and (max-width: 1100px) {
         .header .block-headline h2 {
           font-size: 42px; } }
@@ -391,7 +459,9 @@ html, body {
       color: #8c8f94;
       max-width: 67%;
       margin: 0 auto;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      -webkit-animation: slide-right 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1500ms both;
+      animation: slide-right 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1500ms both; }
       @media screen and (max-width: 700px) {
         .header .block-headline p {
           font-size: 16px; } }
@@ -791,6 +861,7 @@ html, body {
       .perfect-plan .block-plan-container .block-perfect-plan p {
         font-family: Lato, sans-serif;
         font-weight: 400;
+        font-size: 32px;
         font-size: 20px;
         color: #8c8f94;
         margin-bottom: 30px; }
@@ -798,6 +869,7 @@ html, body {
         color: #8c8f94;
         font-family: Lato, sans-serif;
         font-weight: 400;
+        font-size: 32px;
         font-size: 14px; }
         .perfect-plan .block-plan-container .block-perfect-plan span a {
           color: #267df4;
@@ -854,6 +926,7 @@ html, body {
           margin-top: 50px;
           font-family: Lato, sans-serif;
           font-weight: 400;
+          font-size: 32px;
           font-size: 20px;
           color: #8c8f94;
           padding: 0px 55px;
@@ -863,6 +936,7 @@ html, body {
           font-size: 16px;
           font-family: Lato, sans-serif;
           font-weight: 400;
+          font-size: 32px;
           margin-bottom: 25px; }
           .perfect-plan .block-plan-container .plan-block .block-plan p:last-child {
             margin-bottom: 50px; }
@@ -972,6 +1046,7 @@ html, body {
       .footer .footer-menu .menu-block p {
         font-family: Lato, sans-serif;
         font-weight: 400;
+        font-size: 32px;
         font-size: 16px;
         color: #8c8f94;
         margin-bottom: 20px;
@@ -1000,6 +1075,7 @@ html, body {
       color: #8c8f94;
       font-family: Lato, sans-serif;
       font-weight: 400;
+      font-size: 32px;
       font-size: 14px; }
       @media screen and (max-width: 540px) {
         .footer .copyrights p {

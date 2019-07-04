@@ -139,8 +139,7 @@
       }
 
       p{
-        font-family: $font_main;
-        font-weight: $fontWeightRegular;
+        @include plan-block;
         font-size: $buttonSize;
         color: $color_text;
         margin-bottom: 20px;
@@ -175,8 +174,7 @@
 
     p{
       color: $color_text;
-      font-family: $font_main;
-      font-weight: $fontWeightRegular;
+      @include plan-block;
       font-size: 14px;
 
       @media screen and (max-width: 540px) {

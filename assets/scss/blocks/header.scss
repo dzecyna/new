@@ -18,6 +18,13 @@
     @media screen and (max-width: 1100px) {
       display: none;
     }
+
+    img{
+
+        -webkit-animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.9s both;
+        animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.9s both;
+
+    }
   }
   .top-header {
     margin-bottom: 100px;
@@ -27,6 +34,12 @@
       margin-left: 20px;
       margin-right: 20px;
     }
+
+      -webkit-animation: scale-up-ver-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 900ms both;
+      animation: scale-up-ver-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 900ms both;
+
+
+
   }
   .logo {
     display: block;
@@ -78,6 +91,11 @@
       color: $color_background;
       margin-bottom: 30px;
 
+
+        -webkit-animation: slide-right 0.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1000ms both;
+        animation: slide-right 0.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1000ms both;
+
+
       @media screen and (max-width: 1100px) {
         font-size: 42px;
       }
@@ -103,6 +121,9 @@
       @media screen and (max-width: 700px) {
         font-size: 16px;
       }
+
+      -webkit-animation: slide-right 0.7s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1500ms both;
+      animation: slide-right 0.7s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1500ms both;
     }
   }
   .main-nav{

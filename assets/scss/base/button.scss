@@ -23,6 +23,9 @@
     &:hover {
       background: url("./images/appl.png") no-repeat center left 10px #74abf7;
     }
+
+      -webkit-animation: scale-up-hor-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.7s both;
+      animation: scale-up-hor-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.7s both;
   }
 
   &.button-video {
@@ -38,6 +41,9 @@
     &:hover {
       background: url("./images/play.png") no-repeat center left 30px #dfe1e3;
     }
+
+    -webkit-animation: scale-up-hor-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.9s both;
+    animation: scale-up-hor-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.9s both;
   }
   &.button-feature{
     background: url("./images/arrow.png") #267df4 no-repeat center right 30px;

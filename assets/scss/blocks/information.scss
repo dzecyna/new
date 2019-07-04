@@ -334,8 +334,7 @@
       }
 
       p{
-        font-family: $font_main;
-        font-weight: $fontWeightRegular;
+        @include plan-block;
         font-size: $defaultSize;
         color: $color_text;
         margin-bottom: 30px;
@@ -343,8 +342,7 @@
 
       span{
         color: $color_text;
-        font-family: $font_main;
-        font-weight: $fontWeightRegular;
+        @include plan-block;
         font-size: 14px;
 
         a{
@@ -398,9 +396,7 @@
         }
 
         h3{
-          font-family: $font_main;
-          font-weight: $fontWeightRegular;
-          font-size: 32px;
+          @include plan-block;
           margin-bottom: 20px;
         }
 
@@ -415,8 +411,7 @@
 
         h4{
           margin-top: 50px;
-          font-family: $font_main;
-          font-weight: $fontWeightRegular;
+          @include plan-block;
           font-size: $defaultSize;
           color: $color_text;
           padding: 0px 55px;
@@ -426,8 +421,7 @@
         p{
           background: url("./images/check-mark.png") no-repeat 80px;
           font-size: $buttonSize;
-          font-family: $font_main;
-          font-weight: $fontWeightRegular;
+          @include plan-block;
           margin-bottom: 25px;
 
           &:last-child{
