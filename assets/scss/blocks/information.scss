@@ -28,7 +28,7 @@
     margin-bottom: 20px;
     max-width: 85%;
 
-    @include block-111;
+    @include block;
 
     &:last-child{
       margin-bottom: 80px;
@@ -76,7 +76,7 @@
     }
 
     p{
-      @include block-111;
+      @include block;
 
       margin-bottom: 20px;
       width: 430px;
@@ -142,7 +142,7 @@
     }
 
     p {
-      @include block-111;
+      @include block;
 
       margin-bottom: 20px;
       max-width: 41%;
@@ -202,7 +202,7 @@
     }
   }
   p{
-    @include block-111;
+    @include block;
 
     font-size: 12px;
     text-align: center;
@@ -267,7 +267,7 @@
     text-align: center;
 
     p{
-      @include block-111;
+      @include block;
 
       font-size: 12px;
       text-align: center;
