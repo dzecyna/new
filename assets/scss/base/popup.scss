@@ -17,6 +17,34 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+
+  @media screen and (max-width: 1180px) {
+    width: 800px;
+    height: 500px;
+  }
+  @media screen and (max-width: 840px) {
+    width: 600px;
+    height: 350px;
+  }
+  @media screen and (max-width: 630px) {
+    width: 400px;
+    height: 250px;
+  }
+  iframe{
+
+    @media screen and (max-width: 1180px) {
+      width: 750px;
+      height: 400px;
+    }
+    @media screen and (max-width: 840px) {
+      width: 550px;
+      height: 250px;
+    }
+    @media screen and (max-width: 630px) {
+      width: 350px;
+      height: 160px;
+    }
+  }
 }
 .popup_title{
   font-weight: bold;

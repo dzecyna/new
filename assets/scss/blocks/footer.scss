@@ -11,6 +11,16 @@
       @include headline;
 
       margin-bottom: 30px;
+
+      @media screen and (max-width: 800px) {
+        font-size: 35px;
+      }
+      @media screen and (max-width: 460px) {
+        font-size: 27px;
+      }
+      @media screen and (max-width: 360px) {
+        font-size: 23px;
+      }
     }
 
     p {
@@ -29,9 +39,22 @@
     margin-bottom: 30px;
     border-bottom: 1px solid #f4f4f4;
 
+    @media screen and (max-width: 1220px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 850px) {
+      display: block;
+    }
+
     .footer-social-network{
 
       margin-bottom: 120px;
+
+      @media screen and (max-width: 850px) {
+        text-align: center;
+        margin-bottom: 100px;
+      }
 
       a {
         img {
@@ -47,6 +70,9 @@
         color: $color_text;
         width: 250px;
 
+        @media screen and (max-width: 850px) {
+          width: 100%;
+        }
       }
 
       .social{
@@ -89,9 +115,21 @@
   .footer-menu{
     display: flex;
 
+    @media screen and (max-width: 470px) {
+      display: block;
+    }
+
     .menu-block{
 
       margin-left: 100px;
+
+      &:first-child{
+        margin-left: 0px;
+
+        @media screen and (max-width: 470px) {
+          margin-left: 100px;
+        }
+      }
 
       h3{
         font-family: $font_main;
@@ -107,6 +145,16 @@
         color: $color_text;
         margin-bottom: 20px;
         cursor: pointer;
+
+        @media screen and (max-width: 1000px) {
+          margin-bottom: 15px;
+        }
+        @media screen and (max-width: 920px) {
+          font-size: 13px;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 11px;
+        }
       }
     }
   }
@@ -116,11 +164,24 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 1200px) {
+      margin: 0px 10px;
+    }
+
+    @media screen and (max-width: 540px) {
+      display: block;
+      text-align: center;
+    }
+
     p{
       color: $color_text;
       font-family: $font_main;
       font-weight: $fontWeightRegular;
       font-size: 14px;
+
+      @media screen and (max-width: 540px) {
+        margin-bottom: 20px;
+      }
 
       a{
         color: #267df4;
@@ -132,11 +193,20 @@
       display: flex;
       align-items: center;
 
+      @media screen and (max-width: 540px) {
+        display: block;
+        text-align: center;
+      }
+
       h3{
         font-size: 9px;
         font-family: $font_main;
         font-weight: $fontWeightBold;
         margin-right: 10px;
+
+        @media screen and (max-width: 540px) {
+          font-size: 11px;
+        }
       }
     }
   }
