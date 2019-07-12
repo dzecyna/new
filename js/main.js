@@ -32,4 +32,40 @@ $(document).ready(function() {
 
 
 
+
+    $(document).on('scroll', function (){
+        let positionWindow = $(document).scrollTop();
+        let windowheight = $(window).height();
+        let bottomWindow = positionWindow + windowheight;
+        let positionElement = $('.features').offset().top;
+        let positionElements = $('.feature').offset().top;
+        let positionElement1 = $('.map-feature').offset().top;
+        let positionElement2 = $('.interface').offset().top;
+        let positionElement3 = $('.perfect-plan').offset().top;
+        let positionElement4 = $('.footer').offset().top;
+
+        if(bottomWindow > positionElement){
+            $(".features").addClass('active')
+        }
+
+        if(bottomWindow > positionElements){
+            $(".feature").addClass('active')
+        }
+
+        if(bottomWindow > positionElement1) {
+            $(".map-feature").addClass('active')
+        }
+
+        if(bottomWindow > positionElement2) {
+            $(".interface").addClass('active')
+        }
+
+        if(bottomWindow > positionElement3) {
+            $(".perfect-plan").addClass('active')
+        }
+
+        if(bottomWindow > positionElement4) {
+            $(".footer").addClass('active')
+        }
+    });
 });

@@ -2,6 +2,11 @@
 
   text-align: center;
 
+  &.active {
+    -webkit-animation: slide-in-bck-left 800ms cubic-bezier(0.470, 0.000, 0.745, 0.715) 700ms both;
+    animation: slide-in-bck-left 800ms cubic-bezier(0.470, 0.000, 0.745, 0.715) 700ms both;
+  }
+
   .subscribe {
 
     border-bottom: 1px solid #f4f4f4;

@@ -369,6 +369,82 @@ html, body {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%; }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%; } }
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%; }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%; } }
+@-webkit-keyframes scale-up-tl {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%; } }
+@keyframes scale-up-tl {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%; } }
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+@-webkit-keyframes slide-in-bck-left {
+  0% {
+    -webkit-transform: translateZ(700px) translateX(-400px);
+    transform: translateZ(700px) translateX(-400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1; } }
+@keyframes slide-in-bck-left {
+  0% {
+    -webkit-transform: translateZ(700px) translateX(-400px);
+    transform: translateZ(700px) translateX(-400px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1; } }
 .header {
   background: url("./images/new.png");
   background-repeat: no-repeat;
@@ -388,14 +464,11 @@ html, body {
     @media screen and (max-width: 1100px) {
       .header .phone {
         display: none; } }
-    .header .phone img {
-      -webkit-animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both;
-      animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both; }
   .header .top-header {
     margin-bottom: 100px;
     align-items: center;
     -webkit-animation: scale-up-ver-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) 900ms both;
-    animation: scale-up-ver-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both; }
+    animation: scale-up-ver-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) 900ms both; }
     @media screen and (max-width: 1150px) {
       .header .top-header {
         margin-left: 20px;
@@ -594,6 +667,9 @@ html, body {
   @media screen and (max-width: 650px) {
     .features {
       display: block; } }
+  .features.active {
+    -webkit-animation: scale-up-hor-center 1000ms cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms both;
+    animation: scale-up-hor-center 1000ms cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms both; }
 
 .block-features h3 {
   font-family: Lato, sans-serif;
@@ -626,6 +702,9 @@ html, body {
   @media screen and (max-width: 370px) {
     .feature {
       margin-bottom: 20px; } }
+  .feature.active {
+    -webkit-animation: scale-up-tl 3000ms ease-out alternate 700ms both;
+    animation: scale-up-tl 3000ms ease-out alternate 700ms both; }
   .feature .block-feature {
     padding-top: 100px;
     float: right; }
@@ -681,6 +760,9 @@ html, body {
   @media screen and (max-width: 350px) {
     .map-feature {
       height: 370px; } }
+  .map-feature.active {
+    -webkit-animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both;
+    animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both; }
   @media screen and (max-width: 1100px) {
     .map-feature .block-map-feature {
       text-align: center; } }
@@ -719,8 +801,11 @@ html, body {
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 30px; }
-  .map-feature .block-map-feature .partner img {
-    margin-right: 20px; }
+  .map-feature .block-map-feature .partner {
+    -webkit-animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both;
+    animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both; }
+    .map-feature .block-map-feature .partner img {
+      margin-right: 20px; }
 
 .interface {
   background: #f5f5f8;
@@ -733,6 +818,9 @@ html, body {
     .interface {
       margin-bottom: 70px;
       height: 600px; } }
+  .interface.active {
+    -webkit-animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both;
+    animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both; }
   .interface h2 {
     font-family: 'Varela Round', sans-serif;
     font-size: 42px;
@@ -819,6 +907,9 @@ html, body {
     .perfect-plan {
       padding-top: 30px;
       padding-bottom: 100px; } }
+  .perfect-plan.active {
+    -webkit-animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both;
+    animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both; }
   .perfect-plan .block-plan-container {
     display: flex;
     justify-content: space-between; }
@@ -937,7 +1028,8 @@ html, body {
           font-family: Lato, sans-serif;
           font-weight: 400;
           font-size: 32px;
-          margin-bottom: 25px; }
+          margin-bottom: 25px;
+          font-size: 28px; }
           .perfect-plan .block-plan-container .plan-block .block-plan p:last-child {
             margin-bottom: 50px; }
           @media screen and (max-width: 1050px) {
@@ -951,6 +1043,9 @@ html, body {
 
 .footer {
   text-align: center; }
+  .footer.active {
+    -webkit-animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both;
+    animation: slide-in-bck-left 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 700ms both; }
   .footer .subscribe {
     border-bottom: 1px solid #f4f4f4;
     margin-bottom: 80px; }
