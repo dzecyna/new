@@ -32,7 +32,7 @@ ul {
 
 input, button {
   border: none;
-  font: $fontWeightLight $defaultSize 'Lato', sans-serif;
+  font: $fontWeightLight $defaultSize 'Gilroy', sans-serif;
 }
 
 :focus {
@@ -40,7 +40,8 @@ input, button {
 }
 
 html, body {
-  font: $fontWeightLight $defaultSizeMobile 'Lato', sans-serif;
+  font: $fontWeightLight $defaultSizeMobile 'Gilroy', sans-serif;
+  color: $color_main;
   line-height: 1.35;
 
 }
