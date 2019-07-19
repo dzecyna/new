@@ -54,29 +54,58 @@
 
   .content{
     background: url("./images/header.jpg") no-repeat;
-    height: 745px;
+    height: 830px;
 
-    .information{
+    .content__information{
 
       float: right;
       padding-top: 125px;
       text-align: center;
 
       p {
-        font-family: $font_main;
-        font-size: 65px;
-        color: #2389ff;
+        @include text;
       }
       a {
-        font-family: $font_main;
-        font-size: 125px;
-        color: $color_main;
-      }
-
-      .form-email{
-
-        text-align: center;
+        @include title;
       }
     }
+  }
+
+  .about-us{
+    background: url("./images/fon.png") no-repeat;
+    height: 1050px;
+
+    .about-us__information{
+
+      display: block;
+      width: 500px;
+      padding-top: 160px;
+
+      p{
+        @include text;
+        color: $color_main;
+
+      }
+      a {
+        @include title;
+        color: $color_title;
+      }
+
+      span{
+        font-size: 15px;
+        font-family: $font_main;
+        font-weight: $fontWeightLight;
+
+        a{
+          font-size: 15px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .companents{
+    background: url("./images/girls.png") no-repeat;
+    height: 850px;
   }
 }

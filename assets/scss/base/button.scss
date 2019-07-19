@@ -1,4 +1,4 @@
-.button{
+.form-email__button{
   background: url("./images/button.png") no-repeat;
   font-size: 20px;
   width: 300px;
@@ -7,4 +7,13 @@
   border-radius: $radius;
   margin-top: 45px;
   cursor: pointer;
+}
+.about-us__buttom{
+  background: transparent;
+  cursor: pointer;
+  border-radius: 100px;
+  height: 20px;
+  width: 50px;
+  margin-top: 250px;
+  margin-left: 270px;
 }
