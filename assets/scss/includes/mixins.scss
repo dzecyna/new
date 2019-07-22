@@ -1,17 +1,11 @@
-@mixin block{
-   font-family: 'Varela Round', sans-serif;;
-   font-weight: 400;
-   font-size: 18px;
-   color: #8c8f94;
+@mixin text{
+  font-family: $font_main;
+  font-size: 65px;
+  color: $color_title;
 }
-@mixin headline{
-   font-family: 'Varela Round', sans-serif;
-   font-size: 42px;
-   font-weight: 400;
-}
-@mixin plan-block{
-   font-family: Lato, sans-serif;
-   font-weight: $fontWeightRegular;
-   font-size: 32px;
 
+@mixin title{
+  font-family: $font_main;
+  font-size: 125px;
+  color: $color_main;
 }
